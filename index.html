@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <title>Vulnerability research & exploit development</title>
   <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+  
 </head>
 
 <body>
@@ -17,5 +22,33 @@
     <p style="color:white; text-align:center;">"We put the time in ...to know [that network] better than the people who designed it and the people who are securing it," - Rob Joyce, Chief, TAO, NSA</p>
   </div>
 </section>
+  <section>
+    <table id="myTable" class="display">
+       <thead>
+          <tr>
+             <th>Nombre del Documento</th>
+             <th>Enlace</th>
+          </tr>
+       </thead>
+       <tbody>
+          <tr>
+             <td>Documento 1</td>
+             <td><a href="documento1.pdf">Enlace</a></td>
+          </tr>
+          <tr>
+             <td>Documento 2</td>
+             <td><a href="documento2.pdf">Enlace</a></td>
+          </tr>
+          <!-- Agrega más filas según sea necesario -->
+       </tbody>
+    </table>
+  </section>
+
+  <script>
+    $(document).ready( function () {
+      $('#myTable').DataTable();
+    });
+  </script>
+  
 </body>
 </html>
